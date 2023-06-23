@@ -109,6 +109,7 @@ p {
 
   /* height: 100%; */
   line-height: 58px; /* 行の高さを指定(1行の時のみ可能) */
+  transition: all  0.3s ease;
 }
 
 .menu ul a {
@@ -116,6 +117,15 @@ p {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+  transition: all  0.3s ease;
+}
+
+.menu ul li:hover {
+  background-color: #fff;
+}
+
+.menu ul li:hover a {
+  color: rgb(97, 197, 222);
 }
 
 .contents_area {
@@ -140,8 +150,8 @@ p {
   padding-top: 1em;
   padding-bottom: 1em;
 
-  border-top: 1px solid #96746b;
-  border-bottom: 1px solid #96746b;
+  border-top: 1px solid #a39692;
+  border-bottom: 1px solid #a39692;
 }
 
 .footer_contents {
@@ -170,6 +180,136 @@ p {
   color: black;
 }
 
+.footer_items a:hover {
+  text-decoration: underline;
+  color: #96746b;
+}
+
+.social-widget a {
+  width: 32.66%;
+  float: left;
+  line-height: 60px;
+  text-align: center;
+}
+
+.social-widget img {
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.social-widget h3 {
+  text-transform: uppercase;
+}
+
+.banner_lucky {
+  background-image: url(../images/Lucky_young.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 670px;
+}
+
+.banner_text {
+  position: absolute;
+  top: 16%;
+  left: 7.5%;
+  transform: translateY(-50%); /* top:50%と組み合わせて、要素の大きさの半分だけY軸に動かす事で縦中央にする.
+  親要素にはposition: relativeを入れ、子要素にposition: absoluteを入れる.  */
+  width: 45%;
+}
+
+.banner_text h2 {
+  color: #fff;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.banner_text h2 span {
+  color: #fff;
+}
+
+.banner_text p {
+  color: #fff;
+}
+
+.banner_lucky a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  background-color: #312a26;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.information {
+  width: 50%;
+  height: 150px;
+  margin: 20px auto;
+
+  border-radius: 10px 10px;
+  border: 1px solid #96746b;
+}
+
+.information_title {
+  float: left;
+  display: block;
+
+  font-size: 16px;
+  line-height: 150px;
+  padding: 0 20px;
+}
+
+.information span {
+  font-weight: 700;
+  color: rgb(97, 197, 222);
+}
+
+.information_list {
+  float: left;
+  display: block;  
+
+  padding: 10px 5px;
+}
+
+.merch {
+  width: 85%;
+  margin: 1em auto 1em auto;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  /* color: #c7a17a; */
+  color: #67a1d1;
+}
+
+.section-header h2 {
+  text-transform: uppercase;
+  /* color: #312a26; */
+  color: rgb(97, 197, 222);
+}
+
+.section-header hr {
+  background-color: #67a1d1;
+  height: 2px;
+  width: 25%;
+  margin: auto;
+}
+
+.copyright {
+  width: 100%;
+  padding: 5px 50px;
+  font-size: 10pt;
+}
 
 /* ================================================================ */
 /* 2 Banner */
@@ -269,12 +409,12 @@ p {
 }
 
 /* 4 Merchandise Area */
-.merch {
+/* .merch {
   width: 85%;
   margin: 4em auto;
-}
+} */
 
-.section-header {
+/* .section-header {
   text-align: center;
 }
 
@@ -295,7 +435,7 @@ p {
   height: 2px;
   width: 25%;
   margin: auto;
-}
+} */
 
 .merch-gallery {
   margin-top: 2em;
@@ -306,7 +446,11 @@ p {
   width: 24.25%;
   float: left;
   margin-right: 1%;
-  margin-bottom: 1%;;
+  margin-bottom: 1%;
+}
+
+.merch-items h3 {
+  color:rgb(97, 197, 222);
 }
 
 .merch-items:nth-child(4),
@@ -522,7 +666,7 @@ form input[type='submit'] {
   overflow: auto;
   padding: 1em 7.5%;
 }
-
+/* 
 .social-widget {
   width: 32.66%;
   float: left;
@@ -535,4 +679,4 @@ form input[type='submit'] {
 
 .social-widget img {
   width: 1.5em;
-}
+} */
